@@ -1,0 +1,46 @@
+main{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+#buttonCards{
+    width: 98vw;
+    height: 12vh;
+    background-color:rgb(124, 237, 250);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.5s ease;
+}
+
+#cards{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#buttonCards button{
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(62, 62, 240);
+    color: aliceblue;
+}
+
+#buttonCards #img{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: yellowgreen;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#buttonCards:hover{
+    transform: scale(1.05);
+}

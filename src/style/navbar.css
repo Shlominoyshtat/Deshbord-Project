@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+#serch{
+    background-color: rgb(144, 139, 139);
+    color: aliceblue;
+}
+
+input::placeholder{
+    color: aliceblue;
+}
+
+.btnH{
+    border-radius: 5px;
+}
+
+.btnH:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
