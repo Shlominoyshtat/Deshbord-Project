@@ -3,19 +3,17 @@ import './style/main.css'
 import Header from './Components/header.tsx'
 import Member from './Components/member.tsx'
 import { useState } from 'react'
+import Tasks from './Components/task.tsx'
 
 function App() {
   const [statusNew, setStatus] = useState(true)
+  const [tasks,setTasks] = useState<string[]>([])
   return (
     <>
     
       <Header changeStatus={statusNew} setstatus={setStatus}/>
-      <Member avatar='SN' name='shlomi noyshtat' status='active' statusNew={true} />
-      <Member avatar='MK' name='Moti Kopshitz' status='unActive' statusNew={statusNew}/>
-      <Member avatar='SC' name='Sam Cohen' status='unActive' statusNew={statusNew}/>
-      <Member avatar='TB' name='Tayllor Brooks' status='active' statusNew={true}/>
-      <Member avatar='JL' name='Jon Levay' status='active' statusNew={true}/>
-      <Member avatar='LO' name='Leon Omar' status='unActive' statusNew={statusNew}/>
+      <Member statusNew={statusNew} setTasks={setTasks}/>
+      <Tasks task={tasks}/>
     </>
   )
 }
